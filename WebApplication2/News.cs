@@ -17,6 +17,4 @@ public class News
     public int? Priority { get; set; }
     
     public int SubcategoryId { get; set; }
-    
-    public Subcategory? Subcategory { get; set; }
 }

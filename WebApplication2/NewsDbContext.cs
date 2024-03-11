@@ -4,6 +4,10 @@ namespace WebApplication2;
 
 public class NewsDbContext : DbContext
 {
+    public NewsDbContext(DbContextOptions<NewsDbContext> options) : base(options)
+    {
+    }
+    
     public DbSet<Category> Categories { get; init; } = null!;
     public DbSet<Subcategory> Subcategories { get; init; } = null!;
     public DbSet<News> News { get; init; } = null!;

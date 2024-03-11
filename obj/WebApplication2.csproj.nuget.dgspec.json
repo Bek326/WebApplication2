@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Бек\\RiderProjects\\WebApplication2\\WebApplication2.csproj": {}
+    "D:\\trash\\WebApplication2\\WebApplication2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Бек\\RiderProjects\\WebApplication2\\WebApplication2.csproj": {
+    "D:\\trash\\WebApplication2\\WebApplication2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Бек\\RiderProjects\\WebApplication2\\WebApplication2.csproj",
+        "projectUniqueName": "D:\\trash\\WebApplication2\\WebApplication2.csproj",
         "projectName": "WebApplication2",
-        "projectPath": "C:\\Users\\Бек\\RiderProjects\\WebApplication2\\WebApplication2.csproj",
-        "packagesPath": "C:\\Users\\Бек\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Бек\\RiderProjects\\WebApplication2\\obj\\",
+        "projectPath": "D:\\trash\\WebApplication2\\WebApplication2.csproj",
+        "packagesPath": "C:\\Users\\Glebon\\.nuget\\packages\\",
+        "outputPath": "D:\\trash\\WebApplication2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Бек\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Glebon\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -66,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

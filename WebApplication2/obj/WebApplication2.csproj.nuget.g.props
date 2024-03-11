@@ -12,59 +12,15 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="C:\Users\Glebon\.nuget\packages\" />
   </ItemGroup>
-  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <None Include="$(NuGetPackageRoot)microsoft.aspnetcore.aspnetcoremodule\2.1.0-preview1-final\contentFiles\any\any\x64\aspnetcore.dll" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.aspnetcoremodule\2.1.0-preview1-final\contentFiles\any\any\x64\aspnetcore.dll')">
-      <NuGetPackageId>Microsoft.AspNetCore.AspNetCoreModule</NuGetPackageId>
-      <NuGetPackageVersion>2.1.0-preview1-final</NuGetPackageVersion>
-      <NuGetItemType>None</NuGetItemType>
-      <Pack>false</Pack>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <TargetPath>x64\aspnetcore.dll</TargetPath>
-      <DestinationSubDirectory>x64\</DestinationSubDirectory>
-      <Private>True</Private>
-      <Link>x64\aspnetcore.dll</Link>
-    </None>
-    <None Include="$(NuGetPackageRoot)microsoft.aspnetcore.aspnetcoremodule\2.1.0-preview1-final\contentFiles\any\any\x64\aspnetcorerh.dll" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.aspnetcoremodule\2.1.0-preview1-final\contentFiles\any\any\x64\aspnetcorerh.dll')">
-      <NuGetPackageId>Microsoft.AspNetCore.AspNetCoreModule</NuGetPackageId>
-      <NuGetPackageVersion>2.1.0-preview1-final</NuGetPackageVersion>
-      <NuGetItemType>None</NuGetItemType>
-      <Pack>false</Pack>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <TargetPath>x64\aspnetcorerh.dll</TargetPath>
-      <DestinationSubDirectory>x64\</DestinationSubDirectory>
-      <Private>True</Private>
-      <Link>x64\aspnetcorerh.dll</Link>
-    </None>
-    <None Include="$(NuGetPackageRoot)microsoft.aspnetcore.aspnetcoremodule\2.1.0-preview1-final\contentFiles\any\any\x86\aspnetcore.dll" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.aspnetcoremodule\2.1.0-preview1-final\contentFiles\any\any\x86\aspnetcore.dll')">
-      <NuGetPackageId>Microsoft.AspNetCore.AspNetCoreModule</NuGetPackageId>
-      <NuGetPackageVersion>2.1.0-preview1-final</NuGetPackageVersion>
-      <NuGetItemType>None</NuGetItemType>
-      <Pack>false</Pack>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <TargetPath>x86\aspnetcore.dll</TargetPath>
-      <DestinationSubDirectory>x86\</DestinationSubDirectory>
-      <Private>True</Private>
-      <Link>x86\aspnetcore.dll</Link>
-    </None>
-    <None Include="$(NuGetPackageRoot)microsoft.aspnetcore.aspnetcoremodule\2.1.0-preview1-final\contentFiles\any\any\x86\aspnetcorerh.dll" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.aspnetcoremodule\2.1.0-preview1-final\contentFiles\any\any\x86\aspnetcorerh.dll')">
-      <NuGetPackageId>Microsoft.AspNetCore.AspNetCoreModule</NuGetPackageId>
-      <NuGetPackageVersion>2.1.0-preview1-final</NuGetPackageVersion>
-      <NuGetItemType>None</NuGetItemType>
-      <Pack>false</Pack>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <TargetPath>x86\aspnetcorerh.dll</TargetPath>
-      <DestinationSubDirectory>x86\</DestinationSubDirectory>
-      <Private>True</Private>
-      <Link>x86\aspnetcorerh.dll</Link>
-    </None>
-  </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.0-preview.1.24081.2\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\9.0.0-preview.1.24081.2\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.0-preview.1.24081.2\build\net8.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\9.0.0-preview.1.24081.2\build\net8.0\Microsoft.EntityFrameworkCore.Design.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.aspnetcoremodule\2.1.0-preview1-final\build\Microsoft.AspNetCore.AspNetCoreModule.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.aspnetcoremodule\2.1.0-preview1-final\build\Microsoft.AspNetCore.AspNetCoreModule.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.apidescription.server\6.0.5\build\Microsoft.Extensions.ApiDescription.Server.props')" />
+    <Import Project="$(NuGetPackageRoot)swashbuckle.aspnetcore\6.5.0\build\Swashbuckle.AspNetCore.props" Condition="Exists('$(NuGetPackageRoot)swashbuckle.aspnetcore\6.5.0\build\Swashbuckle.AspNetCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.2\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.2\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\8.0.2\build\net8.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\8.0.2\build\net8.0\Microsoft.EntityFrameworkCore.Design.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\Glebon\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\Glebon\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.3</PkgMicrosoft_CodeAnalysis_Analyzers>
-    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\Glebon\.nuget\packages\microsoft.entityframeworkcore.tools\9.0.0-preview.1.24081.2</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\Glebon\.nuget\packages\microsoft.entityframeworkcore.tools\8.0.2</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>
