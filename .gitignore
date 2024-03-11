@@ -1,8 +1,10 @@
-bin/
-obj/
+/WebApplication2/bin
+/WebApplication2/obj
+/bin
+/obj
 /packages/
 /.idea/*
-/Reo.IdentityServer/tempkey.rsa
+/WebApplication2/tempkey.rsa
 */wwwroot/node_modules/*
 v16/
 .vs/
