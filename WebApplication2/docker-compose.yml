@@ -7,7 +7,7 @@ services:
     ports:
       - "5219:80" # Изменили порт с 8000 на 5219
     environment:
-      - ConnectionStrings__DefaultConnection=Server=db;Database=WebApplication2Db;User=sa;Password=Your_password123;
+      - ConnectionStrings__DefaultConnection=Server=db;Database=WebApplication2Db;User=sa;Password=Your_password123;TrustServerCertificate=True
     depends_on:
       - db
 
