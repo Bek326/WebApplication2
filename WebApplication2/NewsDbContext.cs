@@ -4,12 +4,39 @@ namespace WebApplication2;
 
 public class NewsDbContext : DbContext
 {
-    public DbSet<Category> Categories { get; set; }
-    public DbSet<Subcategory> Subcategories { get; set; }
-    public DbSet<News> News { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    public DbSet<Category> Categories { get; init; } = null!;
+    public DbSet<Subcategory> Subcategories { get; init; } = null!;
+    public DbSet<News> News { get; init; } = null!;
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        optionsBuilder.UseSqlServer("YourConnectionString");
+        // Настройка NewsResponse
+        modelBuilder.Entity<News>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Id).ValueGeneratedOnAdd(); // Автоинкремент для Id
+
+            entity.HasOne<Subcategory>()
+                .WithMany()
+                .HasForeignKey(n => n.SubcategoryId);
+        });
+
+        // Настройка Subcategory
+        modelBuilder.Entity<Subcategory>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Id).ValueGeneratedOnAdd(); // Автоинкремент для Id
+
+            entity.HasOne<Category>()
+                .WithMany()
+                .HasForeignKey(sc => sc.CategoryId);
+        });
+
+        // Настройка Category
+        modelBuilder.Entity<Category>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Id).ValueGeneratedOnAdd(); // Автоинкремент для Id
+        });
     }
 }
